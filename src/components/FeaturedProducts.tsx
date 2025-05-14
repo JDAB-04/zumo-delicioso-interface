@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { ShoppingCart } from "lucide-react";
+import { useCart } from "@/contexts/CartContext";
 
 const products = [
   {
@@ -44,6 +45,8 @@ const products = [
 ];
 
 const ProductCard = ({ product }: { product: typeof products[0] }) => {
+  const { addToCart } = useCart();
+  
   const discountedPrice = product.discount 
     ? (product.price - (product.price * product.discount / 100)).toFixed(2) 
     : null;
@@ -77,7 +80,10 @@ const ProductCard = ({ product }: { product: typeof products[0] }) => {
             )}
           </div>
         </div>
-        <Button className="w-full bg-fruit-green hover:bg-fruit-green/90">
+        <Button 
+          className="w-full bg-fruit-green hover:bg-fruit-green/90"
+          onClick={() => addToCart(product)}
+        >
           <ShoppingCart className="mr-2 h-4 w-4" />
           Añadir
         </Button>
