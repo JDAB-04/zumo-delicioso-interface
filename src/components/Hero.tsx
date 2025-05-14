@@ -1,0 +1,38 @@
+
+import { Button } from "@/components/ui/button";
+
+const Hero = () => {
+  return (
+    <div className="relative bg-gradient-to-r from-green-50 to-yellow-50 overflow-hidden">
+      <div className="container mx-auto px-4 py-16 md:py-24">
+        <div className="flex flex-col md:flex-row items-center">
+          <div className="md:w-1/2 mb-10 md:mb-0 z-10">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 text-gray-800">
+              Frutas Frescas <span className="text-fruit-green">Directas</span> del Campo
+            </h1>
+            <p className="text-lg md:text-xl text-gray-600 mb-8 max-w-lg">
+              Disfruta de las frutas más frescas y saludables. Seleccionadas a mano para ofrecerte la mejor calidad.
+            </p>
+            <div className="flex space-x-4">
+              <Button className="btn-primary text-lg px-8 py-6">Ver Productos</Button>
+              <Button variant="outline" className="text-lg px-8 py-6">Más Info</Button>
+            </div>
+          </div>
+          <div className="md:w-1/2 relative">
+            <div className="relative z-0">
+              <div className="absolute -top-20 -right-20 w-64 h-64 bg-fruit-yellow/20 rounded-full"></div>
+              <div className="absolute -bottom-10 -left-10 w-40 h-40 bg-fruit-green/20 rounded-full"></div>
+              <img 
+                src="https://images.unsplash.com/photo-1610832958506-aa56368176cf?ixlib=rb-4.0.3&auto=format&fit=crop&w=1050&q=80" 
+                alt="Frutas frescas variadas" 
+                className="rounded-2xl shadow-lg animate-bounce-slow relative z-10 max-w-full h-auto"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Hero;
