@@ -33,7 +33,7 @@ const Navbar = () => {
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center space-x-8">
           <Link to="/" className="text-gray-700 hover:text-fruit-green transition-colors">Inicio</Link>
-          <a href="#productos" className="text-gray-700 hover:text-fruit-green transition-colors">Productos</a>
+          <Link to="/productos" className="text-gray-700 hover:text-fruit-green transition-colors">Productos</Link>
           <a href="#categorias" className="text-gray-700 hover:text-fruit-green transition-colors">Categorías</a>
           <a href="#nosotros" className="text-gray-700 hover:text-fruit-green transition-colors">Nosotros</a>
           <a href="#contacto" className="text-gray-700 hover:text-fruit-green transition-colors">Contacto</a>
@@ -107,7 +107,7 @@ const Navbar = () => {
         <div className="md:hidden bg-white py-2 px-4 shadow-md">
           <div className="flex flex-col space-y-3">
             <Link to="/" className="text-gray-700 py-2 hover:text-fruit-green transition-colors">Inicio</Link>
-            <a href="#productos" className="text-gray-700 py-2 hover:text-fruit-green transition-colors">Productos</a>
+            <Link to="/productos" className="text-gray-700 py-2 hover:text-fruit-green transition-colors">Productos</Link>
             <a href="#categorias" className="text-gray-700 py-2 hover:text-fruit-green transition-colors">Categorías</a>
             <a href="#nosotros" className="text-gray-700 py-2 hover:text-fruit-green transition-colors">Nosotros</a>
             <a href="#contacto" className="text-gray-700 py-2 hover:text-fruit-green transition-colors">Contacto</a>
