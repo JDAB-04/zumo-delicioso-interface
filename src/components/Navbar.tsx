@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { ShoppingCart, Menu, X, User, LogIn } from "lucide-react";
@@ -50,7 +49,7 @@ const Navbar = () => {
               )}
             </Button>
           </Link>
-          
+
           {isAuthenticated ? (
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
@@ -111,7 +110,7 @@ const Navbar = () => {
             <a href="#categorias" className="text-gray-700 py-2 hover:text-fruit-green transition-colors">Categorías</a>
             <a href="#nosotros" className="text-gray-700 py-2 hover:text-fruit-green transition-colors">Nosotros</a>
             <a href="#contacto" className="text-gray-700 py-2 hover:text-fruit-green transition-colors">Contacto</a>
-            
+
             {isAuthenticated ? (
               <>
                 <Link to="/profile" className="text-gray-700 py-2 hover:text-fruit-green transition-colors flex items-center">

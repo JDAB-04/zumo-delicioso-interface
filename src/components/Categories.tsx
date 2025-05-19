@@ -40,29 +40,29 @@ const Categories = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
           {categories.map((category) => (
             <Link 
-              to={`/productos?categoria=${encodeURIComponent(category.name)}`} 
-              key={category.id}
-            >
-              <Card className="overflow-hidden group cursor-pointer transition-all hover:shadow-lg">
-                <div className="relative h-48 overflow-hidden">
-                  <img 
-                    src={category.image} 
-                    alt={category.name} 
-                    className="w-full h-full object-cover transition-transform group-hover:scale-105" 
-                  />
-                  <div className="absolute inset-0 bg-black/20 group-hover:bg-black/30 transition-colors"></div>
-                </div>
-                <CardContent className="p-4 text-center">
-                  <h3 className="font-medium text-lg">{category.name}</h3>
-                  <p className="text-sm text-gray-500">{category.count} productos</p>
-                </CardContent>
-              </Card>
-            </Link>
-          ))}
-        </div>
+            to={`/productos?categoria=${encodeURIComponent(category.name)}`} 
+            key={category.id}
+          >
+            <Card className="overflow-hidden group cursor-pointer transition-all hover:shadow-lg">
+              <div className="relative h-48 overflow-hidden">
+                <img 
+                  src={category.image} 
+                  alt={category.name} 
+                  className="w-full h-full object-cover transition-transform group-hover:scale-105" 
+                />
+                <div className="absolute inset-0 bg-black/20 group-hover:bg-black/30 transition-colors"></div>
+              </div>
+              <CardContent className="p-4 text-center">
+                <h3 className="font-medium text-lg">{category.name}</h3>
+                <p className="text-sm text-gray-500">{category.count} productos</p>
+              </CardContent>
+            </Card>
+          </Link>
+        ))}
       </div>
-    </section>
-  );
+    </div>
+  </section>
+);
 };
 
 export default Categories;
