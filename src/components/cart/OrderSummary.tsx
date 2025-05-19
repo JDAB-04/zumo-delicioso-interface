@@ -51,7 +51,7 @@ const OrderSummary = () => {
       <div className="space-y-3 mb-6">
         <div className="flex justify-between text-sm">
           <span className="text-muted-foreground">Productos ({cart.length})</span>
-          <span>{cartTotal.toFixed(2)}€</span>
+          <span>${cartTotal.toFixed(2)}</span>
         </div>
         
         <div className="flex justify-between text-sm">
@@ -61,7 +61,7 @@ const OrderSummary = () => {
         
         <div className="border-t pt-3 mt-3 flex justify-between">
           <span className="font-medium text-base">Total</span>
-          <span className="font-medium text-lg">{cartTotal.toFixed(2)}€</span>
+          <span className="font-medium text-lg">${cartTotal.toFixed(2)}</span>
         </div>
       </div>
       

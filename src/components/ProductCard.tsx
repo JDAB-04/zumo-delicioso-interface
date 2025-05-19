@@ -39,16 +39,16 @@ const ProductCard = ({ product }: ProductCardProps) => {
           <div className="flex items-center space-x-2">
             {discountedPrice ? (
               <>
-                <span className="text-fruit-red font-bold">{discountedPrice}€/{product.unit}</span>
-                <span className="text-gray-500 line-through text-sm">{product.price}€</span>
+                <span className="text-fruit-red font-bold">${discountedPrice} /{product.unit}</span>
+                <span className="text-gray-500 line-through text-sm">${product.price}</span>
               </>
             ) : (
-              <span className="text-gray-800 font-bold">{product.price}€/{product.unit}</span>
+              <span className="text-gray-800 font-bold">${product.price} /{product.unit}</span>
             )}
           </div>
         </div>
         <Button 
-          className="w-full bg-fruit-green hover:bg-fruit-green/90"
+          className="w-full bg-fruit-green hover:bg-fruit-green/80"
           onClick={() => addToCart(product)}
         >
           <ShoppingCart className="mr-2 h-4 w-4" />

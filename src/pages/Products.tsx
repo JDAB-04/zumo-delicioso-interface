@@ -2,8 +2,6 @@ import React, { useState } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import ProductCard from "@/components/ProductCard";
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
 import { 
   Pagination, 
   PaginationContent, 
@@ -20,7 +18,6 @@ import {
 } from "@/components/ui/tabs";
 
 // Utilizamos los productos de muestra por ahora
-// En un futuro, esto podría venir de una API o base de datos
 import { allProducts } from "@/data/products";
 
 const Products = () => {

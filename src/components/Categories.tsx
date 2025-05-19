@@ -12,7 +12,7 @@ const categories = [
   {
     id: 2,
     name: "Frutos Secos",
-    image: "https://images.unsplash.com/photo-1563520208326-338f9c0ea2be?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    image: "../fsecos.png",
     count: 18,
   },
   {

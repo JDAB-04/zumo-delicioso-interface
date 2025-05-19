@@ -5,11 +5,13 @@ const Hero = () => {
       <div className="container mx-auto px-4 py-16 md:py-24">
         <div className="flex flex-col md:flex-row items-center">
           <div className="md:w-1/2 mb-10 md:mb-0 z-10">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 text-gray-800">
-              Frutas Frescas <span className="text-fruit-green">Directas</span> del Campo
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-16 text-gray-800">
+              Calidad <span className="text-fruit-orange">directa</span> del <span className="text-fruit-green">Campo</span> a tu mesa
             </h1>
-            <p className="text-lg md:text-xl text-gray-600 mb-8 max-w-lg">
-              Disfruta de las frutas más frescas y saludables. Seleccionadas a mano para ofrecerte la mejor calidad.
+            <p className="text-lg md:text-xl text-gray-600 mb-10 max-w-lg">
+              Aquí podrás encontrar una amplia variedad de productos pensados para ti, 
+              en <span className="text-fruit-green">Fruta </span> <span className="text-fruit-orange"> Fresca</span> estamos 
+              comprometidos con la calidad y el buen servicio.
             </p>
             <div className="flex space-x-4">
               <a href="#productos" className="btn-primary text-lg px-8 py-6 rounded-lg">¡Productos en oferta!</a>

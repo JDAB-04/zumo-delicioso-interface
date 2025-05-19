@@ -24,17 +24,17 @@ const Navbar = () => {
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
         <div className="flex items-center">
           <Link to="/" className="flex items-center">
-            <span className="text-fruit-green text-2xl font-bold mr-1">Fruta</span>
-            <span className="text-fruit-orange text-2xl font-bold">Fresca</span>
+            <span className="text-fruit-green text-3xl font-bold mr-1">Fruta</span>
+            <span className="text-fruit-orange text-3xl font-bold">Fresca</span>
           </Link>
         </div>
 
         {/* Desktop Navigation */}
-        <div className="hidden md:flex items-center space-x-8">
+        <div className="hidden md:flex items-center space-x-9">
           <Link to="/" className="text-gray-700 hover:text-fruit-green transition-colors">Inicio</Link>
-          <Link to="/productos" className="text-gray-700 hover:text-fruit-green transition-colors">Productos</Link>
+          <Link to="/productos" className="text-gray-700 hover:text-fruit-orange transition-colors">Productos</Link>
           <a href="#categorias" className="text-gray-700 hover:text-fruit-green transition-colors">Categorías</a>
-          <a href="#nosotros" className="text-gray-700 hover:text-fruit-green transition-colors">Nosotros</a>
+          <a href="#nosotros" className="text-gray-700 hover:text-fruit-orange transition-colors">Nosotros</a>
           <a href="#contacto" className="text-gray-700 hover:text-fruit-green transition-colors">Contacto</a>
         </div>
 

@@ -48,7 +48,7 @@ const CartItem = ({ item, updateQuantity, removeFromCart }: CartItemProps) => {
           {item.isOrganic && (
             <span className="mr-2 px-2 bg-fruit-green/10 text-fruit-green rounded-full text-xs">Orgánico</span>
           )}
-          <span>{item.price}€/{item.unit}</span>
+          <span>${item.price} /{item.unit}</span>
           {item.discount && (
             <span className="ml-2 text-fruit-red">{item.discount}% dto.</span>
           )}
@@ -66,7 +66,7 @@ const CartItem = ({ item, updateQuantity, removeFromCart }: CartItemProps) => {
             className="h-9"
           />
         </div>
-        <div className="w-20 text-right font-medium">{totalPrice}€</div>
+        <div className="w-20 text-right font-medium">${totalPrice}</div>
         <Button 
           variant="ghost" 
           size="icon" 
