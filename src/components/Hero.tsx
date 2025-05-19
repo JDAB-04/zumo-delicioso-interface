@@ -1,4 +1,6 @@
 
+import { Link } from "react-router-dom";
+
 const Hero = () => {
   return (
     <div className="relative bg-gradient-to-r from-green-50 to-yellow-50 overflow-hidden">
@@ -13,8 +15,9 @@ const Hero = () => {
               en <span className="text-fruit-green">Fruta </span> <span className="text-fruit-orange"> Fresca</span> estamos 
               comprometidos con la calidad y el buen servicio.
             </p>
-            <div className="flex space-x-4">
-              <a href="#productos" className="btn-primary text-lg px-8 py-6 rounded-lg">¡Productos en oferta!</a>
+            <div className="flex flex-wrap gap-4">
+              <a href="#productos" className="btn-primary text-lg px-8 py-3 rounded-lg">¡Productos en oferta!</a>
+              <Link to="/encuentranos" className="btn-secondary text-lg px-8 py-3 rounded-lg">¿Dónde estamos?</Link>
             </div>
           </div>
           <div className="md:w-1/2 relative">

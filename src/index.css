@@ -117,3 +117,20 @@
     @apply text-lg md:text-xl text-center mb-10 text-gray-600 max-w-2xl mx-auto;
   }
 }
+
+@layer utilities {
+  .animate-bounce-slow {
+    animation: bounce 5s infinite;
+  }
+
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(-1%);
+      animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+    }
+    50% {
+      transform: translateY(0);
+      animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    }
+  }
+}

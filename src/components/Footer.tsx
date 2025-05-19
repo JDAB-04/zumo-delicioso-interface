@@ -1,6 +1,7 @@
 
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -37,9 +38,9 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">Enlaces</h3>
             <ul className="space-y-2">
-              <li><a href="#" className="text-gray-400 hover:text-fruit-green transition-colors">Inicio</a></li>
-              <li><a href="#productos" className="text-gray-400 hover:text-fruit-orange transition-colors">Productos</a></li>
-              <li><a href="#categorias" className="text-gray-400 hover:text-fruit-green transition-colors">Categorías</a></li>
+              <li><Link to="/" className="text-gray-400 hover:text-fruit-green transition-colors">Inicio</Link></li>
+              <li><Link to="/productos" className="text-gray-400 hover:text-fruit-orange transition-colors">Productos</Link></li>
+              <li><Link to="/encuentranos" className="text-gray-400 hover:text-fruit-green transition-colors">Encuéntranos</Link></li>
               <li><a href="#nosotros" className="text-gray-400 hover:text-fruit-orange transition-colors">Nosotros</a></li>
               <li><a href="#contacto" className="text-gray-400 hover:text-fruit-green transition-colors">Contacto</a></li>
             </ul>
